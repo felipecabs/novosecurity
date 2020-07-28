@@ -1,6 +1,7 @@
 package cl.usm.novosec.ingreso.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -15,6 +16,7 @@ import cl.usm.novosec.ingreso.signature.EditarIngresoReq;
 import cl.usm.novosec.ingreso.signature.ListarIngresosReq;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class IngresoController {
 	
 	@Autowired
